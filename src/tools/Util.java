@@ -12,11 +12,17 @@ import javax.swing.JTextField;
  * @author u10918857104
  */
 public class Util {
-    public void habilitar(boolean valor,JComponent ... components){
+    public static void habilitar(boolean valor,JComponent ... components){
         for (int i = 0; i< components.length; i++){
             components[i].setEnabled(valor);
         
     }
         
+    }
+    public static void limpar(JComponent ... componentes){
+        for (int i = 0; i < componentes.length; i++) {
+            ((JtextField) componentes[i]).setText("");
+            
+        }
     }
 }
